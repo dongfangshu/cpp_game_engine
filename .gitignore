@@ -2,6 +2,9 @@
 .xmake/
 build/
 
+# clangd/LSP 生成物（含本机绝对路径，不入库）
+compile_commands.json
+
 # MacOS Cache
 .DS_Store
 

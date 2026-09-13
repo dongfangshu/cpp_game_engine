@@ -27,6 +27,9 @@ int main(int argc, char** argv)
         glfwSwapBuffers(window);
 
         glfwPollEvents();
+        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+            break;
+        }
     }
 
     glfwTerminate();

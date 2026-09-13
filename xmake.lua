@@ -1,4 +1,6 @@
 add_rules("mode.debug", "mode.release")
+-- 每次 build 自动刷新 compile_commands.json，供 clangd / Zed 做跳转补全
+add_rules("plugin.compile_commands.autoupdate", {outputdir = "."})
 add_requires("glfw 3.4")
 add_requires("glad 2.0.8")
 target("cpp_game_engine")
